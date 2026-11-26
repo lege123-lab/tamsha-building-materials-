@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="am">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#123b32">
+<meta name="description" content="ተምሻ የህንፃ መሳሪያ - የግንባታ እቃዎችን በአንድ ቦታ ያግኙ።">
+<title>ተምሻ የህንፃ መሳሪያ</title>
+<style>
+:root{--green:#123b32;--green2:#1c5a49;--gold:#e5a83b;--ink:#18231f;--muted:#66736d;--paper:#f5f7f4;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,"Noto Sans Ethiopic",sans-serif;color:var(--ink);background:var(--paper);line-height:1.65}
+a{text-decoration:none;color:inherit}.wrap{width:min(1120px,92%);margin:auto}
+header{background:var(--green);color:white;position:sticky;top:0;z-index:10;box-shadow:0 3px 15px #0002}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:14px 0}.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:19px}.logo{width:42px;height:42px;border-radius:12px;background:var(--gold);display:grid;place-items:center;color:var(--green);font-size:23px}
+nav{display:flex;gap:22px;font-size:14px}nav a{opacity:.9}nav a:hover{color:var(--gold)}
+.hero{background:linear-gradient(115deg,#102f29 0%,#1d5a49 65%,#28715a 100%);color:white;padding:76px 0 82px;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:35px}.eyebrow{color:#f3c66d;font-weight:700;font-size:13px;letter-spacing:1px}
+h1{font-size:clamp(32px,5vw,54px);line-height:1.25;margin:12px 0 18px}.hero p{color:#e0ebe5;max-width:590px;margin:0 0 27px}
+.btn{display:inline-block;border:0;border-radius:10px;padding:12px 19px;font-weight:700;cursor:pointer;background:var(--gold);color:#17392f}.btn.secondary{background:transparent;color:white;border:1px solid #ffffff80;margin-left:8px}
+.hero-art{min-height:270px;border:1px solid #ffffff2b;border-radius:25px;background:linear-gradient(145deg,#ffffff18,#ffffff08);display:grid;place-items:center;position:relative}
+.tool-icons{font-size:76px;letter-spacing:8px;text-align:center;filter:drop-shadow(0 12px 10px #0004)}.hero-art small{display:block;text-align:center;color:#e2eee8;margin-top:15px}
+section{padding:58px 0}.section-head{text-align:center;margin-bottom:28px}.section-head h2{font-size:29px;margin:0 0 7px;color:var(--green)}.section-head p{margin:0;color:var(--muted)}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:-25px;position:relative}.feature{background:white;border-radius:15px;padding:20px;box-shadow:0 8px 25px #102f2910}.feature b{display:block;color:var(--green);margin:7px 0}.feature span{font-size:27px}
+.toolbar{display:flex;gap:12px;justify-content:space-between;align-items:center;margin:24px 0;flex-wrap:wrap}
+input,select{font:inherit;border:1px solid #d8e0da;background:white;border-radius:10px;padding:12px 14px;outline:none}input:focus,select:focus{border-color:var(--green2)}#search{flex:1;min-width:210px}
+.products{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.product{background:white;border:1px solid #e8ede8;border-radius:15px;overflow:hidden;transition:.2s}.product:hover{transform:translateY(-4px);box-shadow:0 12px 24px #102f2912}
+.product-art{height:145px;display:grid;place-items:center;background:linear-gradient(135deg,#e8eee8,#f7f8f5);font-size:57px}.product-info{padding:15px}.tag{font-size:11px;color:var(--green2);background:#e8f1eb;padding:4px 8px;border-radius:20px}.product h3{font-size:16px;margin:10px 0 4px}.product p{font-size:13px;color:var(--muted);margin:0 0 13px}.product button{width:100%;padding:10px;border:1px solid #cbd9d0;background:white;color:var(--green);border-radius:9px;font-weight:700;cursor:pointer}.product button:hover{background:var(--green);color:white}
+.about{background:#eaf0eb}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}.about-box{background:var(--green);color:white;border-radius:20px;padding:28px}.about-box strong{font-size:24px;color:#f3c66d}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.contact-card{background:white;border-radius:15px;padding:22px;border:1px solid #e6ece7}.contact-card h3{margin-top:0;color:var(--green)}.contact-card p{color:var(--muted);margin:7px 0}
+footer{background:#102f29;color:#dce8e1;padding:25px 0;text-align:center;font-size:13px}
+.notice{font-size:12px;color:#66736d;text-align:center;margin-top:22px}
+@media(max-width:800px){.hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr}.hero{padding:55px 0}.hero-art{min-height:190px}.products{grid-template-columns:repeat(2,1fr)}.features{grid-template-columns:1fr}nav{gap:12px;font-size:12px}}
+@media(max-width:460px){.brand{font-size:15px}nav a:nth-child(2){display:none}.products{gap:10px}.product-art{height:115px}.product-info{padding:11px}.product h3{font-size:14px}.btn.secondary{margin:10px 0 0}.hero{padding:42px 0}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+  <a class="brand" href="#"><span class="logo">🏗️</span><span>ተምሻ የህንፃ መሳሪያ</span></a>
+  <nav><a href="#home">መነሻ</a><a href="#products">ምርቶች</a><a href="#about">ስለ እኛ</a><a href="#contact">አግኙን</a></nav>
+</div></header>
+<main>
+<section class="hero" id="home"><div class="wrap hero-grid">
+  <div><div class="eyebrow">የግንባታ ፍላጎትዎ በአንድ ቦታ</div>
+    <h1>ለጠንካራ ግንባታ<br>ትክክለኛው ምርጫ</h1>
+    <p>የህንፃ መሳሪያዎችን በቀላሉ ይመልከቱ። ስለ ምርቶችና ዋጋዎች ለመጠየቅ ከሱቁ ጋር ይገናኙ።</p>
+    <a class="btn" href="#products">ምርቶችን ይመልከቱ</a><a class="btn secondary" href="#contact">አግኙን</a>
+  </div>
+  <div class="hero-art"><div><div class="tool-icons">🧱 🏗️ 🔩</div><small>ጥራት • አስተማማኝነት • አገልግሎት</small></div></div>
+</div></section>
+<div class="wrap features">
+  <div class="feature"><span>🧰</span><b>የተለያዩ ምርቶች</b><small>ለግንባታ የሚያስፈልጉ እቃዎች</small></div>
+  <div class="feature"><span>📞</span><b>ቀላል ግንኙነት</b><small>ስለ ምርት እና ዋጋ ይጠይቁ</small></div>
+  <div class="feature"><span>🚚</span><b>የአቅርቦት ጥያቄ</b><small>ስለ ማድረስ ከሱቁ ጋር ይነጋገሩ</small></div>
+</div>
+<section id="products"><div class="wrap">
+  <div class="section-head"><h2>የምርት ዝርዝር</h2><p>የሚፈልጉትን የግንባታ እቃ ይፈልጉ</p></div>
+  <div class="toolbar"><input id="search" type="search" placeholder="ምርት ይፈልጉ..." aria-label="ምርት ይፈልጉ"><select id="category" aria-label="የምርት አይነት"><option value="all">ሁሉም ምርቶች</option><option value="cement">ሲሚንቶና ግንብ</option><option value="metal">ብረትና ቆርቆሮ</option><option value="plumbing">ቧንቧና መለዋወጫ</option><option value="tools">መሳሪያዎች</option></select></div>
+  <div class="products" id="productList">
+    <article class="product" data-category="cement" data-name="ሲሚንቶ"><div class="product-art">🧱</div><div class="product-info"><span class="tag">ሲሚንቶና ግንብ</span><h3>ሲሚንቶ</h3><p>የሲሚንቶ ምርቶች</p><button onclick="askProduct('ሲሚንቶ')">ዋጋ ይጠይቁ</button></div></article>
+    <article class="product" data-category="metal" data-name="የብረት ዘንግ"><div class="product-art">🔩</div><div class="product-info"><span class="tag">ብረትና ቆርቆሮ</span><h3>የብረት ዘንግ</h3><p>የተለያዩ መጠኖች</p><button onclick="askProduct('የብረት ዘንግ')">ዋጋ ይጠይቁ</button></div></article>
+    <article class="product" data-category="metal" data-name="ቆርቆሮ"><div class="product-art">🏠</div><div class="product-info"><span class="tag">ብረትና ቆርቆሮ</span><h3>ቆርቆሮ</h3><p>የጣሪያ ቆርቆሮ</p><button onclick="askProduct('ቆርቆሮ')">ዋጋ ይጠይቁ</button></div></article>
+    <article class="product" data-category="plumbing" data-name="የውሃ ቧንቧ"><div class="product-art">🚰</div><div class="product-info"><span class="tag">ቧንቧና መለዋወጫ</span><h3>የውሃ ቧንቧ</h3><p>የተለያዩ አይነቶች</p><button onclick="askProduct('የውሃ ቧንቧ')">ዋጋ ይጠይቁ</button></div></article>
+    <article class="product" data-category="tools" data-name="የእጅ መሳሪያ"><div class="product-art">🔨</div><div class="product-info"><span class="tag">መሳሪያዎች</span><h3>የእጅ መሳሪያ</h3><p>ለግንባታ ሥራ</p><button onclick="askProduct('የእጅ መሳሪያ')">ዋጋ ይጠይቁ</button></div></article>
+    <article class="product" data-category="cement" data-name="የግንብ ብሎኬት"><div class="product-art">🧱</div><div class="product-info"><span class="tag">ሲሚንቶና ግንብ</span><h3>የግንብ ብሎኬት</h3><p>የግንባታ እቃዎች</p><button onclick="askProduct('የግንብ ብሎኬት')">ዋጋ ይጠይቁ</button></div></article>
+    <article class="product" data-category="plumbing" data-name="የቧንቧ መለዋወጫ"><div class="product-art">🪠</div><div class="product-info"><span class="tag">ቧንቧና መለዋወጫ</span><h3>የቧንቧ መለዋወጫ</h3><p>የተለያዩ አይነቶች</p><button onclick="askProduct('የቧንቧ መለዋወጫ')">ዋጋ ይጠይቁ</button></div></article>
+    <article class="product" data-category="tools" data-name="የመለኪያ መሳሪያ"><div class="product-art">📏</div><div class="product-info"><span class="tag">መሳሪያዎች</span><h3>የመለኪያ መሳሪያ</h3><p>ለባለሙያዎች</p><button onclick="askProduct('የመለኪያ መሳሪያ')">ዋጋ ይጠይቁ</button></div></article>
+  </div>
+  <p class="notice">ማሳሰቢያ፦ ከላይ ያሉት ምርቶች ለምሳሌ ብቻ ናቸው። እውነተኛ ዝርዝርና ዋጋ ከሱቁ ባለቤት ፈቃድ በኋላ ይገባሉ።</p>
+</div></section>
+<section class="about" id="about"><div class="wrap about-grid">
+  <div><div class="eyebrow" style="color:#28715a">ስለ ተምሻ</div><h2 style="color:#123b32">ለግንባታዎ የሚያስፈልጉትን ይፈልጉ</h2><p>ተምሻ የህንፃ መሳሪያ የምርት መረጃን በቀላሉ ለደንበኞች ለማቅረብ የተዘጋጀ የምሳሌ Website ነው። የሱቁ እውነተኛ መረጃ ከባለቤቱ ጋር ተረጋግጦ ይሞላል።</p></div>
+  <div class="about-box"><strong>ጥያቄ አለዎት?</strong><p>ስለ ምርት፣ ዋጋ፣ ብዛት ወይም አቅርቦት ለመጠየቅ ከሱቁ ጋር ይገናኙ።</p><a class="btn" href="#contact">የግንኙነት መረጃ</a></div>
+</div></section>
+<section id="contact"><div class="wrap"><div class="section-head"><h2>አግኙን</h2><p>ስለ ምርቶች ወይም ትዕዛዝ ይጠይቁ</p></div>
+  <div class="contact-grid"><div class="contact-card"><h3>📍 የሱቁ አድራሻ</h3><p>አድራሻው ከሱቁ ባለቤት ጋር ከተረጋገጠ በኋላ ይጨመራል።</p></div>
+  <div class="contact-card"><h3>📞 ስልክ / WhatsApp</h3><p>የሱቁ ስልክ ቁጥር ገና አልተገኘም።</p><p>ስልኩ ከተረጋገጠ በኋላ የትዕዛዝ አገናኝ ይሰራል።</p></div></div>
+</div></section>
+</main>
+<footer><div class="wrap">© 2026 ተምሻ የህንፃ መሳሪያ • የምሳሌ Website</div></footer>
+<script>
+const search=document.getElementById('search'),category=document.getElementById('category');
+function filterProducts(){const q=search.value.trim().toLowerCase(),c=category.value;document.querySelectorAll('.product').forEach(p=>{const ok=(c==='all'||p.dataset.category===c)&&p.dataset.name.toLowerCase().includes(q);p.style.display=ok?'':'none';});}
+search.addEventListener('input',filterProducts);category.addEventListener('change',filterProducts);
+function askProduct(name){alert('ስለ '+name+' ዋጋ ለመጠየቅ የሱቁን ስልክ ቁጥር ከባለቤቱ ጋር ካረጋገጥን በኋላ ይህ ቁልፍ WhatsApp ይከፍታል።');}
+</script>
+</body>
+</html>
